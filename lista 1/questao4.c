@@ -10,15 +10,18 @@ devem ser realizadas doze operações de processamento, sendo seis para as adiç
 int numero1, numero2, numero3, numero4, resultado;
 
 int main (){
-    printf("Insira o 1° valor inteiro: \n");
-    scanf("%d", numero1);
-    printf("Insira o 2° valor inteiro: \n");
-    scanf("%d", numero2);
-    printf("Insira o 3° valor inteiro: \n");
-    scanf("%d", numero3);
-    printf("Insira o 4° valor inteiro: \n");
-    scanf("%d", numero4);
+    printf("Insira o 1 valor inteiro: \n");
+    scanf("%d", &numero1);
+    printf("Insira o 2 valor inteiro: \n");
+    scanf("%d", &numero2);
+    printf("Insira o 3 valor inteiro: \n");
+    scanf("%d", &numero3);
+    printf("Insira o 4 valor inteiro: \n");
+    scanf("%d", &numero4);
 
-    
+    int soma = numero1+numero2; numero1+numero3; numero1+numero4; numero2+numero3; numero2+numero4; numero3+numero4;
+    int multiplicacao = numero1*numero2; numero1*numero3; numero1*numero4; numero2*numero3; numero2*numero4; numero3*numero4;
+
+    printf("Os resultados sao:%d %d",soma, multiplicacao);
 
 }
